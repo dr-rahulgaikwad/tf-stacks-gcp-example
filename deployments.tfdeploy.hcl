@@ -8,9 +8,9 @@ identity_token "gcp" {
 deployment "us-central1" {
   inputs = {
     identity_token        = identity_token.gcp.jwt
-    audience              = "//iam.googleapis.com/projects/980934175938/locations/global/workloadIdentityPools/wi-pool-gcp-stacks-example/providers/wi-provider-gcp-stacks-example"
-    project_id            = "hc-74e3c710d01c46ee9c3abb2fa31"
-    service_account_email = "gcp-stacks-example@hc-74e3c710d01c46ee9c3abb2fa31.iam.gserviceaccount.com"
+    audience              = "//iam.googleapis.com/projects/640632043466/locations/global/workloadIdentityPools/wi-pool-gcp-stacks-example/providers/wi-provider-gcp-stacks-example"
+    project_id            = "hc-bcc838338420446c8f14b3effe4"
+    service_account_email = "gcp-stacks-example@hc-bcc838338420446c8f14b3effe4.iam.gserviceaccount.com"
     region                = "us-central1"
   }
   # destroy = true
