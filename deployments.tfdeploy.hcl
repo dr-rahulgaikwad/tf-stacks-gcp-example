@@ -16,6 +16,16 @@ deployment "us-central1" {
   # destroy = true
 }
 
+deployment "europe-west1" {
+  inputs = {
+    audience              = "//iam.googleapis.com/projects/640632043466/locations/global/workloadIdentityPools/wi-pool-gcp-stacks-example/providers/wi-provider-gcp-stacks-example"
+    identity_token_file   = identity_token.gcp.jwt_filename
+    project_id            = "hc-bcc838338420446c8f14b3effe4"
+    service_account_email = "gcp-stacks-example@hc-bcc838338420446c8f14b3effe4.iam.gserviceaccount.com"
+    region                = "europe-west1"  # New region
+  }
+}
+
 # # Auto-approve if there are no changes
 # deployment_auto_approve "no_changes" {
 #   check {
